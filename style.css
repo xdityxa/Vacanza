@@ -4,11 +4,219 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url("img/background.png") no-repeat 0 -55px;
+    background-size: contain;
+    font-size: 15px;
+    line-height: 1.5;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
 
+}
+
+/*Global*/
+/*
+.container {
+    width: 80%;
+    margin: auto;
+        overflow: hidden;
+}
+*/
+
+
+.nav {
+    height: 30rem;
+    margin-top: 8px;
+    font-size: 22px;
+    font-family: 'Lexend Deca', sans-serif;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+
+
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav ul a {
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+#csiLogo {
+
+    float: left;
+    margin-left: 15px;
+}
+
+#csiLogo a {
+    font-size: 25px;
+    font-family: 'Lexend Deca', sans-serif;
+    color: black;
+    position: fixed;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: black;
+    font-weight: bold;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+
+}
+
+.headerLogo {
+    height: 22rem;
+    width: 22rem;
+    margin-top: 200px;
+}
+
+.logoText {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-size: 50px;
+    color: white;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+header {
+    text-align: center;
+    justify-content: space-around;
+    height: 642px;
+
+    color: #fff;
+    padding-top: 0px;
+    min-height: 70px;
+    border-bottom: #a4891d 3px solid;
+    letter-spacing: 1px;
+}
+
+
+header li {
+    float: right;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #csi {
+    margin: 0px;
+    padding: 0;
+
+    position: fixed;
+    float: left;
+
+
+}
+
+
+
+
+header nav {
+    float: right;
+
+
+}
+
+
+
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+
+main {
+    background-color: lightgray;
+}
+
+
+
+a #showcase {
+    background
+}
+
+#showcase .container img {
+    width: 250px;
+    margin-top: 200px;
+    margin-left: 300px;
+}
+
+
+#section {
+    background-color: lightgray;
+}
+
+#boxes {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.box {
+    border-radius: 20px;
+    margin-bottom: 60px;
+    padding: 0px 30px 0px 30px;
+    padding-top: 30px;
+    background-color: white
+}
+
+
+hr {
+    color: lightgray;
+    display: block;
+    margin-bottom: 0.5rem;
+    border-style: inset;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
 html {
     font-size: 10px;
     font-family: 'Poppins', sans-serif;
-
+    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)), url("img/background.png") center no-repeat;
+    background-size: cover;
 }
 
 a{
@@ -20,8 +228,8 @@ a{
 header{
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0,0,0,.2), rgba(0,0,0,.5)), url("background.png") center no-repeat;
-    background-size: cover
+    
+    
     
 }
 
@@ -39,13 +247,13 @@ nav{
     align-items: center;
     text-transform: uppercase;
     font-size: 1.6rem;
-/*    background-color: red;*/
-    margin-left: auto;
+    background-color: red;
+    
 }
 
 nav ul{
     display: flex;
-   
+   margin-left: auto;
 }
 
 nav ul li{
@@ -61,8 +269,11 @@ nav ul li a{
 }
 
 
-
-
+.csi h1{
+    justify-content: center;
+    align-items: center;
+}
+*/
 
 
 
