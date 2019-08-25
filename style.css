@@ -5,7 +5,7 @@
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .2), rgba(0, 0, 0, .5)), url("img/background.png") no-repeat 0 -55px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url("img/background.png") no-repeat 0 -55px;
     background-size: contain;
     font-size: 15px;
     line-height: 1.5;
@@ -13,20 +13,12 @@ body {
     margin: 0;
     background-color: #f4f4f4;
 
-}
 
-/*Global*/
-/*
-.container {
-    width: 80%;
-    margin: auto;
-        overflow: hidden;
 }
-*/
-
 
 .nav {
-    height: 30rem;
+    padding: 8px 16px 8px 16px;
+    height: 3rem;
     margin-top: 8px;
     font-size: 22px;
     font-family: 'Lexend Deca', sans-serif;
@@ -48,26 +40,40 @@ body {
     font-family: 'Lexend Deca', sans-serif;
 }
 
-
-#csiLogo {
-
-    float: left;
-    margin-left: 15px;
-}
-
-#csiLogo a {
-    font-size: 25px;
-    font-family: 'Lexend Deca', sans-serif;
-    color: black;
-    position: fixed;
-    letter-spacing: 1px;
-    font-weight: 600;
-}
-
-.nav a:hover {
+.nav ul a:hover {
     color: black;
     font-weight: bold;
 }
+
+#csiLogo a:hover {
+     color: black;
+}
+
+nav ul li a{
+    padding: 20px 20px 20px 20px; 
+}
+.nav ul li{
+    text-decoration: none;
+    display: inline;
+    padding: o;
+    margin: 0px 0px 0px 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 50px;
+    height: auto;
+}
+
+
+
+#csiLogo a {
+    font-size: 22px;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+    position: fixed;
+    letter-spacing:2px;
+    font-weight: 600;
+}
+
 
 .container1 {
     display: flex;
@@ -80,31 +86,53 @@ body {
 }
 
 .headerLogo {
+    padding-top: 7rem;
+    margin: 0;
+/*
     height: 22rem;
     width: 22rem;
-    margin-top: 200px;
+*/
+/*    margin-top: 200px;*/
+    opacity: 0.8;
 }
 
 .logoText {
+    
+    padding: 10px 0px 10px 0px;
     font-family: 'Poppins', sans-serif;
-    letter-spacing: 2px;
-    font-size: 50px;
+    letter-spacing: 5px;
+    font-size: 59px;
     color: white;
     align-items: center;
 }
 
-
-
-
-
-
-
-
-ul {
-    margin: 0;
-    padding: 0;
+.logoLinks{
+    
+    align-content: center;
+    justify-content: space-around;
+    
 }
 
+.logoLinks a{
+    padding: 20px 20px 20px 20px;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+/*
+    margin-right: 20px;
+    margin-left: 20px;
+*/
+    border: 2px solid white;
+    border-radius: 100px;
+    
+    
+}
+
+
+
+
+/**/
 
 
 
@@ -116,16 +144,18 @@ header {
     color: #fff;
     padding-top: 0px;
     min-height: 70px;
-    border-bottom: #a4891d 3px solid;
+/*    border-bottom: #a4891d 3px solid;*/
     letter-spacing: 1px;
 }
 
+/*
 
 header li {
     float: right;
     display: inline;
     padding: 0 20px 0 20px;
 }
+*/
 
 header #csi {
     margin: 0px;
@@ -177,8 +207,7 @@ a #showcase {
 }
 
 #boxes {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 20px 40px 20px;
 }
 
 .box {
