@@ -5,13 +5,14 @@
 }
 
 body {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/background.png")  0 0px;
-    background-size: contain;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("img/background.png") no-repeat;
+    background-size: cover;
     font-size: 15px;
     line-height: 1.5;
     padding: 0;
     margin: 0;
     background-color: #f4f4f4;
+    background-attachment: fixed;
 }
 
 
@@ -37,9 +38,8 @@ header {
     justify-content: space-around;
     height: 100%;
     letter-spacing: 1px;
-/*    margin-bottom: 150px*/
+    /*    margin-bottom: 150px*/
 }
-
 
 .nav ul {
     float: right;
@@ -123,41 +123,38 @@ header {
     margin-bottom: 0px;
 }
 
-.headerLogo img{
+.headerLogo img {
     width: 220px;
     height: 220px;
     transition: transform 0.6s;
-    
+
 }
 
-.headerLogo img:hover{
+.headerLogo img:hover {
     transform: scale(1.1) rotate(720deg);
 }
 
-.logoText {
-   
-    padding: 10px 0px 10px 0px;
-    font-family: 'Lexend Zetta', sans-serif;
-    letter-spacing: 10px;
-    font-size: 100px;
-    font-weight: bold;
-    color: white;
-    align-items: center;
+.logosvg img{
+
+    height: 101px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
 }
 
 .logoLinks {
-/*    padding: 20px 20px 20px 20px;*/
     
+
     align-content: center;
     justify-content: space-around;
     transition: transform .2s;
 
 }
 
-.logoLinks:hover{
+.logoLinks:hover {
     transform: scale(1.1);
-    
-    
+
+
 }
 
 .logoLinks a {
@@ -171,14 +168,14 @@ header {
     text-decoration: none;
     border: 2px solid white;
     border-radius: 100px;
-    
+
 }
 
 .logoLinks a:hover {
     color: #00695c;
-    border:4px solid #00695c;
+    border: 4px solid #00695c;
     font-weight: 600;
-    
+
 }
 
 hr {
@@ -189,7 +186,7 @@ hr {
 }
 
 
-.buttons{
+.buttons {
     text-decoration: none;
     margin-top: 40px;
     height: 40px;
@@ -199,44 +196,30 @@ hr {
     border-radius: 15px;
 }
 
-.buttons a{
+.buttons a {
     color: black;
     text-decoration: none;
     padding: 15px 20px 05px 20px;
 }
 
-.buttons a:hover{
+.buttons a:hover {
     color: white;
-/*
-    text-decoration: none;
-    padding: 15px 20px 15px 20px;
-*/
 }
 
 
-.buttons:hover{
+.buttons:hover {
     transition: 0.5s;
     background-color: #00695c;
     color: white;
     color: white;
     border: none;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    
+
 }
 
 main {
     background-color: #cccccc;
 }
-
-/*
-.textImg{
-    float: right;
-    height: 200px;
-}
-*/
-
-
-
 
 #section {
     background-color: white;
@@ -244,9 +227,8 @@ main {
 }
 
 #boxes {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 40px 80px 40px 80px;
-/*    height: 400px;*/
 }
 
 .box {
@@ -258,54 +240,60 @@ main {
     height: 300px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     justify-content: space-between;
-    
+
 }
-.box p{
+.box h3{
+    border-bottom: 1px solid black;
+    max-width: 900px;
+}
+
+.box p {
     font-size: 20px;
     letter-spacing: 2px;
     font-family: sans-serif;
     color: gray;
-    
+    max-width: 900px;
+
 }
 
-.box img{
+.box img {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     float: right;
     height: 300px;
-    width:300px;
+    width: 300px;
     border-radius: 0px 20px 20px 0px;
 }
 
-.box img:hover{
+.box img:hover {
     cursor: ;
 }
 
-.footerLogos{
-    background:linear-gradient(to bottom,rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/footer.png);
+.footerLogos {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)), url(img/footer.png);
     height: 100px;
     display: flex;
     justify-content: center;
     border-bottom: 1px dotted white;
 }
 
-.footerLogos img{
+.footerLogos img {
     height: 25px;
     width: 25px;
     margin-top: 20px;
     margin-right: 10px;
     margin-left: 10px;
     transition: 0.1s;
-     
-    
+
+
 }
 
-.footerLogos img:hover{
+.footerLogos img:hover {
     transform: rotate(-15deg);
 }
 
-.copyright{
+.copyright {
     height: 20px;
     color: white;
     font-size: 10px;
@@ -313,11 +301,3 @@ main {
     display: flex;
     justify-content: center;
 }
-
-
-
-
-
-
-
-
